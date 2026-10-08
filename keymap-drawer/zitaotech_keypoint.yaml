@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: zitaotech_keypoint}
 layers:
   QWERTY:
-  - {t: TAB, h: ESC}
+  - ESC
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - BSPC
-  - CAPS
+  - LEFT COMMAND
   - A
   - S
   - D
@@ -25,7 +25,7 @@ layers:
   - J
   - K
   - L
-  - ;
+  - ''''
   - ENTER
   - LSHFT
   - Z
@@ -43,22 +43,22 @@ layers:
   - .
   - /
   - RSHFT
-  - LCTRL
-  - LGUI
-  - LALT
-  - MUTE
-  - RAISE
+  - LEFT COMMAND
+  - LEFT ALT
+  - LEFT CONTROL
+  - {t: ARR_BT, h: toggle}
+  - ARR_BT
+  - {t: ;, h: LEFT ALT}
+  - NUM_FN
   - SPACE
-  - LOWER
-  - LOWER
-  - SPACE
-  - RAISE
-  - MUTE
+  - ':'
+  - RIGHT ALT
+  - {t: NUMPAD, h: toggle}
   - '-'
   - '='
   - '`'
-  LOWER:
-  - ESC
+  NUM_FN:
+  - TAB
   - '1'
   - '2'
   - '3'
@@ -69,65 +69,65 @@ layers:
   - '8'
   - '9'
   - '0'
-  - DEL
-  - CAPS
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp RCLK'
-  - '&mkp RCLK'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''''
-  - ENTER
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&bl BL_DEC'
-  - '&bl BL_INC'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - NUBS
-  - RSHFT
-  - LCTRL
-  - LGUI
-  - '&bootloader'
-  - BT CLR
-  - {t: ▽, type: trans}
-  - SPACE
-  - {t: LOWER, type: held}
-  - LOWER
-  - SPACE
-  - {t: MOUSE, h: toggle}
-  - OUT TOG
-  - '&bootloader'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  RAISE:
-  - ESC
+  - '`'
+  - LEFT COMMAND
   - F1
-  - UP
+  - F2
   - F3
   - F4
   - F5
+  - '&mkp RCLK'
+  - '&mkp RCLK'
   - F6
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - ''
   - F7
   - F8
   - F9
   - F10
+  - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bl BL_DEC'
+  - '&bl BL_INC'
+  - F12
+  - DELETE
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
   - ''
+  - LGUI
+  - ''
+  - BT CLR
+  - ''
+  - SPACE
+  - {t: NUM_FN, type: held}
+  - RIGHT SHIFT
+  - '&javascript_arrow'
+  - RIGHT ALT
+  - OUT TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - CAPS
+  ARR_BT:
+  - ''
+  - ''
+  - UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - BACKSPACE
+  - ''
   - LEFT
   - DOWN
   - RIGHT
@@ -135,17 +135,12 @@ layers:
   - ''
   - ''
   - ''
-  - F11
-  - F12
+  - BT NXT
+  - BT PRV
+  - BT CLR
+  - BT CLR ALL
   - ''
-  - ''
-  - ''
-  - ''
-  - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
+  - RETURN
   - ''
   - ''
   - ''
@@ -156,18 +151,23 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - LCTRL
-  - LGUI
-  - ''
-  - ''
-  - {t: RAISE, type: held}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - ''
   - ''
   - ''
   - ''
-  - RAISE
   - ''
+  - {t: ARR_BT, h: toggle}
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: QWERTY, h: toggle}
   - ''
   - ''
   - ''
@@ -218,15 +218,70 @@ layers:
   - LGUI
   - LALT
   - ''
-  - RAISE
+  - ARR_BT
   - SPACE
   - '&mkp MB1'
   - '&mkp MB1'
   - '&tdRMCLK'
-  - RAISE
+  - ARR_BT
   - MUTE
   - '-'
   - '='
   - '`'
-  RESERVE: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  NUMPAD:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP MULTIPLY
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP SUBTRACT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP DIVIDE
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - RETURN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 1
+  - KP 2
+  - KP 3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - {t: QWERTY, h: toggle}
+  - KP DOT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
