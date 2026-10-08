@@ -95,7 +95,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>,
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
@@ -113,8 +113,8 @@
                 <&inc_dec_kp LEFT RIGHT>;
         };
 
-        ARROW_BT {
-            display-name = "ARROW_BT";
+        ARR_BT {
+            display-name = "ARR_BT";
             bindings = <
 &none  &none     &kp UP    &none      &none  &none  &none  &trans  &trans      &none       &none         &kp BACKSPACE
 &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none  &none  &none   &bt BT_NXT  &bt BT_PRV  &bt BT_CLR    &bt BT_CLR_ALL  &none         &kp RETURN
