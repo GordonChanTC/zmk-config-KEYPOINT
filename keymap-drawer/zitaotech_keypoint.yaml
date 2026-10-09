@@ -43,11 +43,11 @@ layers:
   - .
   - /
   - RSHFT
-  - LEFT COMMAND
+  - LEFT GUI
+  - ''
   - LEFT ALT
-  - LEFT CONTROL
   - {t: ARR_BT, h: toggle}
-  - '&js_arr'
+  - ARR_BT
   - {t: ;, h: LEFT ALT}
   - NUM_FN
   - SPACE
@@ -161,7 +161,7 @@ layers:
   - ''
   - ''
   - {t: ARR_BT, h: toggle}
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
