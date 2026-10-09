@@ -95,7 +95,7 @@ layers:
   - '&bl BL_DEC'
   - '&bl BL_INC'
   - F12
-  - DELETE
+  - DEL
   - ','
   - .
   - /
