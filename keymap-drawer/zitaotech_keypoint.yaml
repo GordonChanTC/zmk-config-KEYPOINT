@@ -103,14 +103,14 @@ layers:
   - ''
   - LGUI
   - ''
-  - BT CLR
+  - ''
   - ''
   - SPACE
   - {t: NUM_FN, type: held}
   - RIGHT SHIFT
   - '&javascript_arrow'
   - RIGHT ALT
-  - OUT TOG
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CAPS
