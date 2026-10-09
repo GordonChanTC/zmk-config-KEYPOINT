@@ -47,7 +47,7 @@ layers:
   - LEFT ALT
   - LEFT CONTROL
   - {t: ARR_BT, h: toggle}
-  - ARR_BT
+  - '&js_arr'
   - {t: ;, h: LEFT ALT}
   - NUM_FN
   - SPACE
@@ -108,7 +108,7 @@ layers:
   - SPACE
   - {t: NUM_FN, type: held}
   - RIGHT SHIFT
-  - '&javascript_arrow'
+  - '&js_arr'
   - RIGHT ALT
   - ''
   - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
   - ''
   - ''
   - {t: ARR_BT, h: toggle}
-  - {type: held}
+  - ''
   - ''
   - ''
   - ''
