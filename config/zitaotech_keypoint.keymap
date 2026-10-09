@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define LOWER 1
@@ -77,7 +76,7 @@
         javascript_arrow: javascript_arrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            bindings = <&kp EQUAL &kp GT>;
             label = "JAVASCRIPT_ARROW";
         };
     };
@@ -102,10 +101,10 @@
         NUM_FN {
             display-name = "NUM_FN";
             bindings = <
-&kp TAB           &kp N1    &kp N2  &kp N3      &kp N4   &kp N5     &kp N6     &kp N7           &kp N8             &kp N9         &kp N0        &kp GRAVE
-&kp LEFT_COMMAND  &kp F1    &kp F2  &kp F3      &kp F4   &kp F5     &mkp RCLK  &mkp RCLK        &kp F6             &kp MINUS      &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&none             &kp F7    &kp F8  &kp F9      &kp F10  &kp F11    &trans     &trans           &bl BL_DEC         &bl BL_INC     &kp F12       &kp DELETE        &kp COMMA          &kp DOT        &kp SLASH  &trans
-&none             &kp LGUI  &none   &bt BT_CLR  &none    &kp SPACE  &mo 1      &kp RIGHT_SHIFT  &javascript_arrow  &kp RIGHT_ALT  &out OUT_TOG  &trans            &trans             &kp CAPS
+&kp TAB           &kp N1    &kp N2  &kp N3  &kp N4   &kp N5     &kp N6     &kp N7           &kp N8             &kp N9         &kp N0     &kp GRAVE
+&kp LEFT_COMMAND  &kp F1    &kp F2  &kp F3  &kp F4   &kp F5     &mkp RCLK  &mkp RCLK        &kp F6             &kp MINUS      &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&none             &kp F7    &kp F8  &kp F9  &kp F10  &kp F11    &trans     &trans           &bl BL_DEC         &bl BL_INC     &kp F12    &kp DELETE        &kp COMMA          &kp DOT        &kp SLASH  &trans
+&none             &kp LGUI  &none   &none   &none    &kp SPACE  &mo 1      &kp RIGHT_SHIFT  &javascript_arrow  &kp RIGHT_ALT  &none      &trans            &trans             &kp CAPS
             >;
 
             sensor-bindings =
