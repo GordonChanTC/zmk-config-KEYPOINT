@@ -52,7 +52,7 @@ layers:
   - NUM_FN
   - SPACE
   - ':'
-  - RIGHT ALT
+  - RIGHT GUI
   - {t: NUMPAD, h: toggle}
   - '-'
   - '='
